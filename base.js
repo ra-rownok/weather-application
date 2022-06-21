@@ -3,7 +3,7 @@ const weatherShow = async () => {
   document.getElementById('error').style.display = 'none';
   const searchText = searchLocation.value;
   searchLocation.value = "";
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=b5dababa5cada0d7c6f7c2050dd9e8a5&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=b5dababa5cada0d7c6f7c2050dd9e8a5&units=metric`;
 
   try{
       const res = await fetch(url)
