@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <style>
+            body{
+                background-image: url("images/pexels-francesco-ungaro-2835436.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+            }
+        </style>
+</head>
+
+<body class="container">
+    <div class="input-group mt-5 mx-auto w-50">
+        <input id="search-location" type="text" class="form-control" placeholder="Enter a city for weather" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+        <button onclick="weatherShow();" class="btn btn-danger" type="button" id="button-addon2">Search</button>
+    </div>
+    <div id="weather-details" class="text-white text-center mt-5">
+    </div>
+    <p id="error" style="display: none;" class="text-center text-danger">Something went wrong! please try again letter</p>
+    <script src="base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
